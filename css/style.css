@@ -830,6 +830,7 @@ table {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  text-align: center;
   margin: 0 auto; }
 
 @media (min-width: 769px) {
@@ -840,6 +841,9 @@ table {
     flex-direction: row;
     padding-right: 20px;
     padding-left: 20px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     justify-items: space-around; } }
 
 .footer__items h2 {
