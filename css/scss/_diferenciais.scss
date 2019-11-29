@@ -1,0 +1,75 @@
+.diferenciais{
+    font-family:fabriga;
+    width:100%;
+    background:#f71963;
+    padding-top:40px;
+    & .container{
+        flex-direction: column;
+        @media (min-width:800px){
+            flex-direction: row;
+        }
+    }
+    & h1{
+        max-width:230px;
+        margin-bottom:60px;
+        font-size:26px;
+        font-weight: bold;
+        text-align:center;
+        margin:0 auto 40px auto;
+        color:#142032;
+        @media (min-width:768px){
+            font-size:40px;
+            max-width:360px;
+        }
+    }
+    &__lat{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin:0 auto;
+        min-width:220px;
+    }
+    &__lat li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width:360px;
+        margin-bottom:45px;
+    }
+    &__lat img{
+        width:75px;
+        height: 75px;
+        align-items: flex-start;
+    }
+    &__lat div{
+        margin:0 10px;
+    }
+    &__lat h2{
+        font-size:20px;
+        max-width:90px;
+        font-weight: bold;
+        margin-bottom:10px;
+        color:#142032;
+    }
+    &__lat p{
+        display: none;
+        font-size:12px;
+        line-height: 24px;
+        color:#fff;
+        @media (min-width:800px){
+            display: block;
+          }
+    }
+    & .celular{
+        display: none;
+        margin:0 20px;
+        align-self: flex-end;
+        @media (min-width:800px){
+            display: block;
+        }
+    }
+    & .celular img{
+        height: 380px;
+        min-width:220px;
+    }
+}

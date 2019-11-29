@@ -1,0 +1,114 @@
+.vitrine{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding:40px 10px 40px 10px;
+    font-family:fabriga;
+    background-color:#fff;
+    &__titulo{
+        font-size:24px;
+        color:#363636;
+        max-width:230px;
+        text-align:center;
+        font-weight: bold;
+        line-height: 30px;
+        @media (min-width:768px){
+            font-size:40px;
+            max-width:620px;
+            line-height: 46px;
+        }
+    }
+    &__texto{
+        font-size:14px;
+        line-height:17px;
+        color:#bbb;
+        max-width:300px;
+        text-align:center;
+        margin:20px 0 25px 0;
+        @media (min-width:768px){
+            font-size:18px;
+            max-width:360px;
+            line-height: 22px;
+        }
+    }
+    &__btn{
+        color:#f71963;
+        font-size:14px;
+        text-decoration: underline;
+        cursor:pointer;
+        @media (min-width:768px){
+            font-size:16px;
+        }
+    }
+    &__produtos{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        margin:60px 0 40px 0;
+    }
+    &__produtos ul{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &__produtos .item{
+        display: flex;
+        flex:1 1 180px;
+        flex-direction: column;
+        background-color:#fff;
+        width:280px;
+        padding:10px;
+        margin:0 10px; 
+        box-shadow: 1px 1px 6px 1px rgba(0, 0, 0, .1);        
+        opacity: .7;
+        cursor: pointer;
+    }
+    &__produtos .item:hover{
+        opacity:1;
+    }
+    &__separador{
+        @media (min-width:768px){
+            display: flex;
+            justify-content:center;
+        }
+    }
+    &__separador span:nth-child(1){
+        @media (min-width:768px){
+            color:#808080;
+            text-decoration: line-through;
+            margin-right:10px;
+        }
+    }
+    &__produtos img{
+        margin:0 auto;
+    }
+    &__produtos p{
+        font-size:16px;
+        text-align: center;
+        color:#808080;
+        margin:20px 0 10px 0;
+    }
+    &__produtos span{
+        font-size:16px;
+        text-align: center;
+        color:#f71963;
+    }
+}
+
+.carroussel-dots{
+    display: flex;
+    width:80px;
+    justify-content: space-between;
+    margin:40px 0;
+    & span{
+        width:15px;
+        height: 15px;
+        background-color:#999999;
+        border-radius:50%;
+        cursor: pointer;
+        opacity:.5;
+    }
+    & span:nth-child(2){
+        background-color:#f71963;
+        opacity:1;
+    }
+}

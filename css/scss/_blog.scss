@@ -1,0 +1,76 @@
+.blog{
+    font-family:fabriga;
+    border-top:2px solid #999999;
+    border-bottom:2px solid #999999;
+    padding:60px 0;
+    & .container{
+        flex-direction: column;
+        align-items:center;
+        @media (min-width:768px){
+            flex-direction:row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+    }
+    & h2{
+        font-size:16px;
+        font-weight: bold;
+    }
+    &__titulo{
+        font-size:24px;
+        text-align:center;
+        font-weight: bold;
+        color:#363636;
+        @media (min-width:768px){
+            font-size:40px;
+            margin-bottom:40px;
+        }
+    }
+    &__item{
+        max-width:300px;
+        min-width:220px;
+        @media (min-width:768px){
+            display: flex;
+            flex-direction: column;
+            margin:0 10px;
+        }        
+    }
+    &__img{
+        margin:20px 0;
+    }
+    &__data{
+        display: flex;
+        justify-content: space-between;
+        margin:20px 0;
+    }
+    &__data div{
+        display: flex;
+        align-items: center;
+        flex:1;
+    }
+    &__data div img{
+        margin-right:10px;
+    }
+    &__data div span{
+        font-size:11px;
+        color:#808080;
+    }
+    &__texto{
+        margin-bottom:20px;
+        font-size:14px;
+        line-height: 17px;
+        color:#808080;
+    }
+    &__creditos{
+        display: flex;
+        align-items: center;
+    }
+    &__creditos img{
+        width:30px;
+        height: 30px;
+        margin-right:10px;
+    }
+    &__creditos span{
+        font-size:13px;
+    }
+}
