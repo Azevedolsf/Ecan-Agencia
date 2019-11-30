@@ -32,6 +32,12 @@
     &__mobile{
         cursor: pointer;
         padding:10px;
+        z-index:100;
+        &.change{
+            position: absolute;
+            top:10px;
+            right: 10px;;
+        }
         @media (min-width:769px){
             display: none;
         }
@@ -64,6 +70,24 @@
         }
         &.ativo{
             display: block;
+            position:absolute;
+            top:0;
+            left:0;
+            right: 0;
+            background-color:#000;
+            opacity:.9;
+            z-index:99;
+            @media (min-width:769px){
+                display: none;
+            }
+            & ul{
+                width:100%;
+                padding:0 10px;
+                justify-content:flex-start;
+            }
+            & li{
+                margin:0 5px;
+            }
         }
         & ul{
             display: flex;
@@ -88,7 +112,7 @@
         min-width:90px;
         height: 35px;
         @media (min-width:769px){
-            order:-5;
+        order:-5;
         }
     }
     &__compras{

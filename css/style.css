@@ -99,7 +99,13 @@ table {
 
 .header__mobile {
   cursor: pointer;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 100; }
+
+.header__mobile.change {
+  position: absolute;
+  top: 10px;
+  right: 10px; }
 
 @media (min-width: 769px) {
   .header__mobile {
@@ -143,7 +149,28 @@ table {
     order: 0; } }
 
 .header__nav.ativo {
-  display: block; }
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .9;
+  z-index: 99; }
+
+@media (min-width: 769px) {
+  .header__nav.ativo {
+    display: none; } }
+
+.header__nav.ativo ul {
+  width: 100%;
+  padding: 0 10px;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.header__nav.ativo li {
+  margin: 0 5px; }
 
 .header__nav ul {
   display: -webkit-box;
